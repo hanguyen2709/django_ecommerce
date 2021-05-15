@@ -4,7 +4,7 @@ from customers.models import Customer
 from profiles.models import Profile
 from django.utils import timezone
 from .utils import generate_code
-from django.shortcuts import reverse
+from django.urls import reverse
 
 
 class Position(models.Model):
