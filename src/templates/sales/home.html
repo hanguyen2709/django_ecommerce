@@ -45,16 +45,16 @@ home
 <br>
 
 {% if sales_df %}
-    sales df
+    Sales
     {{sales_df|safe}}
     <br>
-    positions df
+    Positions
     {{positions_df|safe}}
     <br>
-    merged df
+    Merged
     {{merged_df|safe}}
     <br>
-    grouped by df
+    Grouped
     {{df|safe}}
     <br>
     <img src="data:image/png;base64, {{chart|safe}}" id='img'>

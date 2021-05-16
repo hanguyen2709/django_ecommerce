@@ -55,7 +55,7 @@ def home_view(request):
             df = merged_df.groupby('transaction_id', as_index=False)['price'].agg('sum')
 
             chart = get_chart(chart_type, sales_df, results_by)
-            print('chart', chart)
+            # print('chart', chart)
             sales_df = sales_df.to_html()
             positions_df = positions_df.to_html()
             merged_df = merged_df.to_html()
